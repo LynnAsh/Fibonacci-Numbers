@@ -10,7 +10,11 @@ public class App {
                         f1 = f2;
                         f2 = f3;
                     }
-                    System.out.println("Fibanacci number " + usrNum + " = " + f3);
+                    if (f3 < 0) {
+                        System.out.println("Fibanacci number is out of range:(4727).");
+                    } else {
+                        System.out.println("Fibanacci number " + usrNum + " = " + f3);
+                    }
                 }else{
                     System.out.println("Number must be positive.");
                 }
